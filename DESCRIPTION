@@ -1,0 +1,13 @@
+Package: telegramR
+Type: Package
+Title: sending messages to Telegram from R
+Version: 0.1
+Date: 2015-07-21
+Author: Alexander Franz
+Maintainer: Alexander Franz <alexfranz90@gmail.com>
+Description: Use the mobile messaging service Telegram to send messages from R to your mobile phone.
+License: GPL
+Imports:
+    jsonlite,
+    RCurl
+LazyData: TRUE
