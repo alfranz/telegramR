@@ -1,6 +1,6 @@
 #'  get credentials for the chat bot
 #
-#'  @param token the HTTP API token provided by the Telegram Botfather
+#'  @param token a string containing the HTTP API token provided by the Telegram Botfather
 #'  @return returns a list of credentials to identify the user
 #'
 #'

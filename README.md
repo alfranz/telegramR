@@ -1,5 +1,6 @@
 # telegramR
-An R wrapper for the Telegram Bot API. This will be further developed into an R package.
+
+R wrapper for the Telegram Bot API. Send Telegram messages from R. 
 
 ## Description
 
@@ -7,25 +8,35 @@ This package makes use of the rather new bot API of mobile messaging service [Te
 
 ## Installation
 
-For the initial set up, you have to create a so-called Telegram bot through a client of your choice. We'll need the (rather long) HTTP token, so a desktop client will be easier to copy the token into R.  
 
-1. Install packages ``RCurl`` and ``jsonlite`` in order to use the script. 
+```R
+# install.packages("devtools")
 
+devtools::install_github("alfranz/telegramR", dependencies = TRUE)
 
-2. First we talk to the [**@BotFather**](https://telegram.me/botfather) on Telegram, he's the guy setting up our R bot.
- Insert image 1 here -
+```
 
-3. Follow the given instructions and name your bot. The Bot's username has to be unique and end with **bot**. You'll be provided with an **HTTP Token** looking like *80221123:AAF-PVwasdRDebj_W8iO-828394tJEpM*, note it somewhere, as we will need this later on. 
+## Initial setup
 
-3.1. *Optionally*: You can also name your bot and add desciptions, avatars and whatnot. See [this](https://core.telegram.org/bots#botfather) for further instructions. 
+For the initial set up, you have to create a so-called Telegram Bot through a client of your choice. You'll need the (rather long) HTTP token, so I recommend using the excellent [web client](https://web.telegram.org) making it easier to copy/paste the token into R.
 
-4. Talk to your bot. Send him a message and say Hi! to him. This needs to be done in order to get your chat id which will be needed by R.
+* First message the [@BotFather](https://telegram.me/botfather) on Telegram, he's the guy setting up your personal R bot.
 
-5. Enter your token into the ``tele_info`` function and start sending messages to your Telegram with ``tele_send``, happy texting!   
+* Follow the instructions and name your bot. The Bot's username has to be unique and end with **bot**. You'll be provided with an **HTTP Token** looking like this *04849:AAF-PVwasdfebj_W894594tJEpM*, note it somewhere, as you will need this later on. 
+
+* *Optionally*: You can also name your bot and add desciptions, avatars and whatnot. See [this](https://core.telegram.org/bots#botfather) for further instructions. 
+
+* Message your bot. Send a message and say Hi! to him (or something else but don't curse). This needs to be done in order to get your chat id which will be needed by R.
+
+* Enter your token into the ``tele_info("0394083-this-is-a-random-http-token-23124333h3")`` function and start sending messages to your Telegram with ``tele_send()``, happy texting!   
 
 
 ## Future plans 
 
-Future plans for this package include adding functionalities such as the possibility of sending plots and knitr reports (e.g. in html or pdf format). Also, the installation process is a bit tedious and could be made easier.
-Any suggestions on your side? Feel free to contact me at alexfranz90@googlemail.com.
+Future plans for this package include:
+* functionality to send images, plots and knitr reports (html/pdf).
+
+Also, the installation process is a bit tedious and could be made easier.
+
+Any suggestions? Feel free to contact me at alexfranz90@googlemail.com.
 

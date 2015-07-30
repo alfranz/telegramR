@@ -1,10 +1,11 @@
 #'
 #'
-#'  Sending messages to the Telegram
+#'  Sending messages to Telegram via a Bot.
 #'
 #'  @param myinfo a list returned by tele_info() containting API Token and the Chat ID
 #'  @param message a string containing the message to be sent by the Bot
-#'
+#'  @example
+#'  tele_send(myinfo, "I am sending messages from R!")
 #'
 
 
